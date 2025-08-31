@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ============== transform ============== */
+.transform {
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, rgba(173, 216, 230, 0.1) 0%, rgba(255, 215, 0, 0.05) 50%, rgba(112, 56, 255, 0.05) 100%);
+}
+
+.title-transform {
+    font-size: 40px;
+    color: rgba(17, 24, 39, 1);
+    font-weight: bolder;
+    letter-spacing: 1.2px;
+}
+
+.transform-para {
+    padding: 12px 10% 2% 10%;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(75, 85, 99, 1);
+    line-height: 28px;
+}
+
+/* ============= corporate workshop ========== */
+.container-workshop {
+    padding: 20px 40px;
+}
+
+.component-one {
+    
+    padding: 30px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-icon {
+    font-size: 60px;
+    color: rgba(203, 48, 224, 1);
+    background: var(--color-violet-6110, rgba(112, 56, 255, 0.1));
+    padding: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+
+.corporate-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sub-title-corporate {
+    color: rgba(203, 48, 224, 1);
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+}
+
+.corporate-img {
+    margin: 20px auto;
+    width: 100%;
+    height: 600px;
+}
+
+.corporate-para {
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+    color: var(--color-azure-34, rgba(75, 85, 99, 1));
+    letter-spacing: 2px;
+}
+
+.btn-learn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 20px 0px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    background: rgba(128, 0, 128, 1);
+    box-shadow: 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-learn:hover {
+    background: rgb(74, 96, 209);
+}
+
+.righer-lineing {
+    padding-left: 12px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* =========== component two ============ */
+.component-two {
+    margin-top: 30px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 8px 10px -6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.public-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sub-title-public {
+    color: rgba(203, 48, 224, 1);
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+}
+
+.public-img {
+    margin: 20px auto;
+    width: 100%;
+    height: 600px;
+}
+
+.public-para {
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+    color: var(--color-azure-34, rgba(75, 85, 99, 1));
+    letter-spacing: 2px;
+}
+
+/* ============= choose workshop ============ */
+.choose-workshop {
+    background: var(--color-grey-98, rgba(249, 250, 251, 1));
+    margin-top: 15px;
+    padding: 80px 40px;
+}
+
+.workshop-title {
+    color: rgba(17, 24, 39, 1);
+    text-align: center;
+    letter-spacing: 1.3px;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.para-workshop {
+    text-align: center;
+    padding: 14px 15%;
+    color: rgba(75, 85, 99, 1);
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.cards-workshop {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.purple-icon {
+    font-size: 40px;
+    color: rgba(203, 48, 224, 1);
+    background: var(--color-violet-6110, rgba(112, 56, 255, 0.1));
+    padding: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.work-sub-title {
+    text-align: center;
+}
+
+.work-sub-para {
+    text-align: center;
+    padding: 14px 0;
+    line-height: 24px;
+}
+
+/* ============ started the container ========== */
+.started {
+    background: linear-gradient(90deg, #000000 0%, #800080 100%);
+    padding: 5%;
+    text-align: center;
+}
+
+.start-title {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.start-para-title {
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 12px 12%;
+    font-size: 19px;
+    line-height: 29px;
+    font-weight: lighter;
+}
+.button-group {
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;          
+    gap: 20px;                
+    margin-top: 20px;
+}
+
+.schedule, .success {
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 200px;   
+}
+
+.schedule {
+    border: none;
+    outline: none;
+    background-color: rgba(128, 0, 128, 1);
+    color: #fff;
+}
+
+.schedule:hover {
+    background: rgb(74, 96, 209);
+}
+
+.success {
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: transparent;
+    color: #fff;
+}
+
+.success:hover {
+    background-color: #fff;
+    color: #6725e1;
+}
+
+
+/* ================= Responsive Design ================= */
+
+@media (min-width: 1200px) {
+    .transform {
+        padding: 100px 15%;
+    }
+    .corporate-img, .public-img {
+        height: 500px;
+    }
+    .cards-workshop {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .transform {
+        padding: 80px 10%;
+    }
+    .corporate-img, .public-img {
+        height: 450px;
+    }
+    .cards-workshop {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .transform {
+        padding: 60px 8%;
+    }
+    .corporate-img, .public-img {
+        height: 400px;
+    }
+    .cards-workshop {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+    .transform {
+        padding: 40px 5%;
+    }
+    .title-transform {
+        font-size: 26px;
+    }
+    .corporate-img, .public-img {
+        height: 300px;
+    }
+    .cards-workshop {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .btn-learn, .schedule, .success {
+        font-size: 16px;
+        min-width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .transform {
+        padding: 30px 4%;
+    }
+    .title-transform {
+        font-size: 22px;
+    }
+    .transform-para {
+        font-size: 16px;
+        padding: 10px 5%;
+    }
+    .corporate-img, .public-img {
+        height: 220px;
+    }
+    .workshop-title {
+        font-size: 24px;
+    }
+    .cards-workshop {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .para-workshop {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .btn-learn, .schedule, .success {
+        font-size: 14px;
+        min-width: 140px;
+    }
+}
+
+@media (max-width: 250px) {
+    .title-transform, .corporate-title, .public-title {
+        font-size: 16px;
+    }
+    .transform-para, .corporate-para, .public-para {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .corporate-img, .public-img {
+        height: 150px;
+    }
+    .cards-workshop {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .purple-icon, .custom-icon {
+        font-size: 24px;
+        padding: 10px;
+    }
+    .btn-learn, .schedule, .success {
+        font-size: 12px;
+        min-width: 100px;
+        padding: 8px;
+    }
+}

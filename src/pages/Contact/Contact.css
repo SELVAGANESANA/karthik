@@ -1,0 +1,420 @@
+  *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+  }
+  /* overall-contact */
+  .title-con{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 30px;
+      height: 40vh;
+      background-color: rgb(186, 215, 223);
+      flex-direction: column;
+      
+  }
+  .title-con h1{
+      font-size: 50px;
+      font-family:sans-serif;
+  }
+  .title-con-p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 85%;
+      font-size: 20px;
+      font-family:sans-serif;
+  }
+  .input-cont{
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      min-height: 100vh;
+  }
+  .input-title,.cont-info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items: center;
+      gap: 10px;
+      padding: 20px;
+  }
+  .input-cont-p,.cont-info-p{
+      font-size: 20px;
+      width: 85%;
+       display: flex;
+      justify-content: center;
+     align-items: center;
+  }   
+ 
+  .Input{
+      background-color: rgb(255, 255, 255);
+      border-radius:10px;
+      width: 70%;
+      padding: 25px;
+      font-family: sans-serif;
+      box-shadow: 0px 0px 7px 1px rgba(000, 000, 000, 0.6);
+  }
+  label, input,select{
+      width: 100%;
+      height: 50px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+  }
+  input{
+      background-color: rgba(214, 202, 202,0.3);
+      border: 1px solid black;
+  }
+  textarea{
+      height: 120px;
+      width: 100%;
+      margin-top: 15px;
+      resize: vertical;
+      border-radius: 5px;
+      padding: 7px;
+  }
+  .in-put-button{
+      width: 100%;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 22px;
+      border: none;
+      margin-top: 15px;
+      background-color: rgb(90, 0, 150);
+      color: white;
+  }
+  .in-put-button:hover{
+      background-color: rgb(30, 30, 197);
+  }
+  /* conatct info */
+      
+  .con-details{
+      min-height: 70vh;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 40px;
+      padding: 25px;
+  }
+  .overall-cont i{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: purple;
+      background-color: rgba(214, 202, 202,0.5);
+      padding: 17px;
+      width: 50px;
+      height: 50px;
+      font-size: 23px;
+  }
+  .cards, .office-hours,.our-locat{
+      min-height: 200px;
+      width: 45%;
+      background-color: whitesmoke;
+      box-shadow: 0px 3px 8px 0px rgb(82, 80, 80);
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap:30px;
+      border-radius: 5px;
+      padding: 10px;
+      font-family: sans-serif;
+  }
+  .content{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
+  .cardA{
+      color: purple;
+  }
+  .CAR{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 30px;
+  }
+  .icons-with i{
+      background-color: black;
+      color: white;
+  }
+  .icons{
+      font-size: 23px;
+      color: purple;
+      background-color: rgba(214, 202, 202,0.8);
+      /* border: 1px solid black; */
+      border-radius: 50%;
+      padding: 17px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+  .Our{
+      display: flex;
+      flex-direction: column;
+      justify-content:start;
+      align-items: start;
+      gap: 10px;
+      padding: 10px;
+      font-family: sans-serif;
+  }
+  .icon span{
+      font-size: 23px;
+      color: purple;
+      background-color: rgba(214, 202, 202,0.4);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .address{
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+  }
+  /* -----WithUs---- */
+  .withus{
+      height: 50vh;
+      width: 100%;
+      background-color: rgb(186, 215, 223);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      font-family: sans-serif;
+  }
+  .withus h1{
+      font-size: 55px;
+  }
+  .withus-p{
+      font-size: 27px;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .ico{
+      display: flex;
+      gap: 20px;
+  }
+  .ready{
+      min-height: 50vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:30px;
+      font-family: sans-serif;
+      color: white;
+      background: linear-gradient(90deg, #000000 0%, #800080 100%);
+    }
+  .ready h1{
+      font-size: 50px;
+  }
+  .ready-p{
+      width: 75%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 23px;
+      color: white;
+  }
+
+  .ready-p p{
+      color: rgba(214, 202, 202,0.8);
+  }
+  button{
+      border-radius: 7px;
+      padding: 15px 35px;
+      border:none;
+      font-size: 20px;
+      background-color: purple;
+      color: white;
+  }
+  button:hover{
+      background-color: rgb(19, 19, 255);
+  }
+
+  /* ========================= */
+  /* 📱 Responsive Media Queries */
+  /* ========================= */
+
+  /* Tablet screens (max-width: 992px) */
+  @media (max-width: 992px) {
+    
+    .title-con h1 {
+      font-size: 38px;
+    }
+
+    .title-con-p {
+      width: 90%;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .input-cont {
+      gap: 30px;
+      padding: 10px;
+    }
+
+    .Input {
+      width: 90%;
+      padding: 20px;
+    }
+
+    .con-details {
+      padding: 10px;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .cont-info h1,.cont-info-p{
+      padding: 10px;
+    }
+    .cards, .office-hours, .our-locat {
+      width: 80%;
+    }
+    .withus{
+      padding: 10px;
+    }
+    .withus h1 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .withus-p {
+      width: 90%;
+      font-size: 20px;
+      text-align: center;
+    }
+  .ready{
+      padding: 10px;
+  }
+    .ready h1 {
+      font-size: 40px;
+    }
+
+    .ready-p {
+      width: 90%;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  /* Mobile screens (max-width: 600px) */
+  @media (max-width: 600px) {
+    .title-con {
+      height: auto;
+      padding: 30px 15px;
+      gap: 15px;
+      text-align: center;
+    }
+
+    .title-con h1 {
+      font-size: 30px;
+    }
+
+    .title-con-p {
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .input-cont {
+      padding: 10px;
+      min-height: auto;
+    }
+
+    .input-title h1 {
+      font-size: 24px;
+    }
+
+    .input-cont-p {
+      font-size: 16px;
+      width: 100%;
+    }
+
+    .Input {
+      width: 100%;
+      padding: 15px;
+    }
+
+    label, input, textarea {
+      font-size: 14px;
+    }
+
+    .in-put-button {
+      font-size: 18px;
+      padding: 10px;
+    }
+
+    .con-details {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 20px;
+    }
+
+    .cards, .office-hours, .our-locat {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+    }
+
+    .icons {
+      font-size: 20px;
+      padding: 12px;
+    }
+
+    .cardName {
+      font-size: 18px;
+    }
+
+    .cardPara {
+      font-size: 14px;
+    }
+
+    .cardA {
+      font-size: 14px;
+    }
+
+    .withus h1 {
+      font-size: 28px;
+    }
+
+    .withus-p {
+      font-size: 16px;
+      width: 100%;
+    }
+  .ready{
+      padding: 10px;
+  }
+    .ready h1 {
+      font-size: 28px;
+    }
+
+    .ready-p {
+      font-size: 16px;
+      width: 100%;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 12px 25px;
+    }
+  }

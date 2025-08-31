@@ -12,7 +12,7 @@ import Public from "./pages/Publicwork/public";
 import ScrollToTop from "./component/scrolltop";
 import Privacy from "./component/privacy";
 import Terms from "./component/terms";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (

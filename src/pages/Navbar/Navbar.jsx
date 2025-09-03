@@ -1,14 +1,11 @@
 import React from "react";
 import './Navbar.css';
 import { Link } from "react-router-dom";
-import logo2 from '../../assets/logo2.PNG';
-import logo1 from '../../assets/logo1.PNG';
-import logonon from '../../assets/logonon.png';
-import logodar from '../../assets/logodar.png';
+import { IoLogoWhatsapp } from "react-icons/io";
 import logo from '../../assets/logo.png';
 import { FaWhatsapp } from "react-icons/fa";
 const Navbar = () => {
-    const phoneNumber = "919840600638"; // your WhatsApp number with country code
+    const phoneNumber = "919840187701"; // your WhatsApp number with country code
     const message = "Hi, I am interested in your services!";
     return (
         <div className="overallnav">
@@ -29,7 +26,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <FaWhatsapp color="green" size={40} />
+                    <IoLogoWhatsapp color="green" size={40} />
                 </a>
             </div>
 

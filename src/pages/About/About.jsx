@@ -6,6 +6,8 @@ import { RiGlobalLine } from "react-icons/ri";
 import { PiMedalFill } from "react-icons/pi";
 import profileimg from '../../assets/profile.jpg'
 import logo2 from '../../assets/logo2.PNG';
+import gamelogo from "../../assets/gamelogo.jpg"
+import gamelogoo from "../../assets/gamelogoo.png"
 import logo1 from '../../assets/logo1.PNG'
 const About = () => {
 
@@ -58,12 +60,17 @@ const About = () => {
                 <p>The company designs customized learning journeys for a diverse spectrum of clients, ranging from Fortune 500 corporations and IT giants to manufacturing leaders, banks, public sector enterprises, and educational institutions. </p>
                 <p>Whether it is a senior leadership team navigating complex decision-making through simulations, or a group of students experiencing collaboration through critical conversation games, AGRISA’s sessions are crafted to deliver both emotional resonance and practical outcomes.</p>
                 <p>The company’s expertise covers a wide range of learning areas, including leadership and collaborative decision-making, negotiation and conflict resolution, communication and stress management, employee engagement programs, outbound team-building workshops, and campus-to-corporate transitions.</p>
-                <p> What sets AGRISA apart is its unique integration of game mechanics, theatre-based learning, emotional catharsis techniques, and liberating structures — turning training into a transformative journey rather than a passive exercise.</p>
-                <p>Over the years, AGRISA has collaborated with leading organizations across industries: Hyundai, Daimler India, Samsung, TVS, Citibank, Axis Bank, Canara Bank, HCL, Cognizant, Capgemini, Accenture, TCS, Vodafone, Airtel, Larsen & Toubro, Sterlite, Michelin, BPCL, Anna University, VIT, LIBA, and many others.</p>
-                <p>These partnerships demonstrate AGRISA’s ability to tailor learning to the unique needs of corporate, public, and educational audiences.</p>
+                <p>What sets AGRISA apart is its unique integration of game mechanics, theatre-based learning, emotional catharsis techniques, and liberating structures — turning training into a transformative journey rather than a passive exercise.</p>
+                <p>Over the years, <strong>Karthik</strong> has collaborated with leading organizations across industries: Hyundai, Daimler India, Samsung, TVS, Citibank, Axis Bank, Canara Bank, HCL, Cognizant, Capgemini, Accenture, TCS, Vodafone, Airtel, Larsen & Toubro, Sterlite, Michelin, BPCL, Anna University, VIT, LIBA, and many others.</p>
+                <p>These partnerships demonstrate <strong>Karthik’s</strong> ability to tailor learning to the unique needs of corporate, public, and educational audiences.</p>
+
 
                 <div className="aboutcomp-img">
-                    <img src={logo1} alt="" />
+
+                    <figure>
+                        <img src={gamelogoo} alt="" />
+
+                    </figure>
                 </div>
             </div>
 
@@ -99,7 +106,15 @@ const About = () => {
                 </div>
 
                 <div className="aboutceoimg">
-                    <img src={profileimg} alt="" />
+
+                    <figure>
+                        <img src={profileimg} alt="Karthik, CEO & Founder of AGRISA" />
+                        <figcaption>
+                            <strong>Karthik</strong><br />
+                            CEO & Founder
+                        </figcaption>
+                    </figure>
+
                 </div>
 
                 <div className="aboutowncontent">
@@ -149,7 +164,7 @@ const About = () => {
                     <li>Recognized by TATA Consultancy Services in 2016 for conducting 100+ ILP (Initial Learning Programs) for their employees.</li>
                     <li>Facilitated programs across IT, BFSI, Manufacturing, Telecom, Education, Consulting, and Government sectors.</li>
                     <li>Designed workshops for CXOs, senior leaders, executives, employees, students, and open community groups.</li>
-                   
+
                 </ul>
             </div>
 
@@ -157,10 +172,10 @@ const About = () => {
 
             <div className="aboutimpnum">
 
-                <div className="aboutimgbox aboutimgbox1"> 
+                <div className="aboutimgbox aboutimgbox1">
                     <h1>19+</h1>
                     <p>professional experience</p></div>
-                <div className="aboutimgbox aboutimgbox2"> 
+                <div className="aboutimgbox aboutimgbox2">
                     <h1>850+</h1>
                     <p>sessions delivered so far.</p></div>
                 <div className="aboutimgbox aboutimgbox3">

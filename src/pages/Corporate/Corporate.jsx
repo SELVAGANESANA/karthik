@@ -3,16 +3,15 @@ import "./corporate.css";
 // import the image
 import corsess1 from "../../assets/pro45.jpg";
 // import fourth images
-import img1 from '../../assets/pro45.jpg';
-import img2 from '../../assets/pro3.jpg';
-import img3 from '../../assets/pro4.jpg';
+
 import pro28 from '../../assets/pro28.jpg';
 import pro44 from '../../assets/pro44.jpg';
 import pro9 from '../../assets/pro9.jpg';
 import pro16 from '../../assets/pro16.jpg';
 import pro19 from '../../assets/pro19.jpg';
+import { useNavigate } from 'react-router-dom';
 // import the team image
-import teamimg from "../../assets/pro4.jpg";
+import teamimg from "../../assets/pro12.jpg";
 const Corporate = () => {
   const cardThird = [
     {
@@ -49,14 +48,14 @@ const cardFourth = [
         image: pro16
     },
     {
-        title: "Effective Communication for Teams",
+        title: "Effective Communication and Decision Making",
         day: "Half Day",
         role: "All Employees, Project Teams",
         description: "Interactive sessions that build empathy, listening, and collaboration skills, helping teams resolve conflicts and communicate with impact.",
         image: pro9
     },
     {
-        title: "Innovation & Digital Transformation",
+        title: "Innovation and Thinking Styles",
         day: "2 Days",
         role: "Business Owners, IT Managers, Innovators",
         description: "A hands-on workshop that blends design thinking, creativity, and digital tools to help organizations embrace innovation and change.",
@@ -77,6 +76,8 @@ const cardFourth = [
         image: pro28
     }
 ]
+ 
+ const navigate=useNavigate();
 
 
    const cardSixth = [
@@ -126,10 +127,12 @@ const cardFourth = [
                         <p className="para1-second">Transform your organization with customized workshops designed</p>
                         <p className="para2-second">specifically for your team's unique challenges and strategic objectives.</p>
                         <div className="button-groups">
-                            <button className="schedule-btn">Schedule Consultation <i class="ri-arrow-right-line righer-line"></i></button>
-                            <button className="back-btn"><i className="ri-arrow-left-line lefter"></i> Back to Workshops</button>
+                            <button className="schedule-btn" onClick={()=>navigate("/Contact")} >Schedule Consultation <i class="ri-arrow-right-line righer-line"></i></button>
+                            <button className="back-btn" onClick={()=> navigate("/work")}><i className="ri-arrow-left-line lefter"></i> Back to Workshops</button>
                         </div>
-                        <img src={corsess1} alt="corporate session 1" className='coress1-img' />
+                        <div className="cor-secondimg">
+                            <img src={corsess1} alt="corporate session 1" className='coress1-img' />
+                        </div>
                     </div>
                 </section>
 

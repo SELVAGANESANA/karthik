@@ -21,8 +21,7 @@ import pro19 from '../../assets/pro19.jpg';
 import pro20 from '../../assets/pro20.jpg';
 import pro21 from '../../assets/pro21.jpg';
 import pro22 from '../../assets/pro22.jpg';
-import pro23 from '../../assets/pro23.jpg';
-import pro24 from '../../assets/pro24.jpg';
+
 import pro25 from '../../assets/pro25.jpg';
 import pro26 from '../../assets/pro26.jpg';
 import pro27 from '../../assets/pro27.jpg';
@@ -40,14 +39,18 @@ import pro38 from '../../assets/pro38.jpg';
 import pro39 from '../../assets/pro39.jpg';
 import pro40 from '../../assets/pro40.jpg';
 import pro41 from '../../assets/pro41.jpg';
+import pro42 from '../../assets/pro42.jpg';
+import pro43 from '../../assets/pro43.jpg';
+import pro44 from '../../assets/pro44.jpg';
+import pro45 from '../../assets/pro45.jpg';
 
 const Gallery= ()=>{
  
     const galleryimg = [
   pro2, pro3, pro4, pro5, pro6, pro7, pro8, pro9, pro10,
   pro11, pro12, pro13, pro14, pro15, pro16, pro17, pro18, pro19, pro20,
-  pro21, pro22, pro23, pro24, pro25, pro26, pro27, pro28, pro29, pro30,
-  pro31, pro32, pro33, pro34, pro35, pro36, pro37, pro38, pro39, pro40,pro41
+  pro21, pro22,  pro25, pro26, pro27, pro28, pro29, pro30,
+  pro31, pro32, pro33, pro34, pro35, pro36, pro37, pro38, pro39, pro40,pro41,pro42,pro43,pro44,pro45
 ];
 
 

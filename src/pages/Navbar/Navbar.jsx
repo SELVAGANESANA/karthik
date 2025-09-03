@@ -20,7 +20,7 @@ const Navbar = () => {
                 <Link to='/about' >About</Link>
                 <Link to="/work" >Workshop</Link>
                 <Link to='/gallery' >Gallery</Link>
-                <Link to="/contact">Contact</Link>
+                <Link to="/Contact">Contact</Link>
             </div>
 
             <div className="whatsapp">

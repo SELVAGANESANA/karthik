@@ -9,7 +9,9 @@ import img3 from '../../assets/pro39.jpg';
 import pro36 from '../../assets/pro36.jpg'
 import pro38 from '../../assets/pro38.jpg'
 import pro27 from '../../assets/pro27.jpg'
-import pro5 from '../../assets/pro5.jpg';
+import pro5 from '../../assets/pro44.jpg';
+import pro11 from '../../assets/pro11.jpg'
+import { useNavigate } from 'react-router-dom';
 // import the image of sixth section
 import participate from "../../assets/pro2.jpg";
 
@@ -49,8 +51,8 @@ const Public = () => {
 
     const cardFour = [
         {
-            title: "Personal Branding Masterclass",
-            day: "3 hours",
+            title: "Entrepreneurial and Scale Up Masterclass",
+            day: "4 hours",
             role: "Freelancers, Entrepreneurs, Job Seekers",
             description: "Discover how to build a compelling personal brand that resonates with your audience and opens new career opportunities.",
             image: img1
@@ -64,24 +66,24 @@ const Public = () => {
         },
         {
             title: "Financial Literacy for Beginners",
-            day: "2.5 hours",
+            day: "4 hours",
             role: "Young Professionals, Students, Individuals",
             description: "Gain foundational knowledge in personal finance, including budgeting, saving, investing, and debt management for a secure future.",
             image: img3
         },
         {
             title: "Leadership Essentials",
-            day: "3.5 hours",
+            day: "4 hours",
             role: "Aspiring Leaders, Team Leads",
             description: "Develop essential leadership skills such as decision-making, delegation, and motivating teams to achieve collective goals.",
             image: pro36
         },
         {
             title: "Stress Management Workshop",
-            day: "2 hours",
+            day: "4 hours",
             role: "Students, Professionals, Anyone seeking balance",
             description: "Learn practical tools and techniques to manage stress, build resilience, and maintain mental well-being in daily life.",
-            image: img2
+            image: pro11
         },
         {
             title: "Innovation & Design Thinking",
@@ -112,7 +114,8 @@ const Public = () => {
             location: "San Francisco"
         }
     ]
-
+   
+    const navigate = useNavigate();
     return (
         <>
             {/*=================== overall public container ================ */}
@@ -121,7 +124,7 @@ const Public = () => {
                 <section className="public-one">
                     <span className="one-first">Workshops</span>
                     <span className='slazae'>  /  </span>
-                    <span className="sub-title-one">Public Workshops</span>
+                    <span className="sub-title-one">Personal Branding</span>
                 </section>
 
                 {/* ============== section two ==================== */}
@@ -130,16 +133,16 @@ const Public = () => {
                         <h3 className="public-soluc">
                             <i className="ri-group-line custom-publicicon"></i> Open Enrollment
                         </h3>
-                        <h1 className="title-public-two">Public Workshops</h1>
+                        <h1 className="title-public-two">Personal Branding</h1>
                         <p className="para-public-two">
                             Join professionals from diverse industries in our comprehensive
                             public workshop programs designed to accelerate your career and expand your network.
                         </p>
                         <div className="public-groups-btn">
-                            <button className="register-btn">
+                            <button className="register-btn" onClick={()=> navigate("/Contact")} >
                                 Register Now <i className="ri-arrow-right-line righer-line"></i>
                             </button>
-                            <button className="public-btn2">
+                            <button className="public-btn2"  onClick={()=> navigate("/work")}>
                                 <i className="ri-arrow-left-line"></i> Back to Workshops
                             </button>
                         </div>
@@ -151,7 +154,7 @@ const Public = () => {
 
                 {/* ================= section three ================= */}
                 <section className="public-three">
-                    <h1 className="three-heading1">Why Join Our Public Workshops?</h1>
+                    <h1 className="three-heading1">Why Join Our Personal Branding?</h1>
                     <p className="three-para">
                         Our public workshops offer unique opportunities to learn, grow, and connect
                         with professionals from various industries and backgrounds.
@@ -169,7 +172,7 @@ const Public = () => {
 
                 {/* =============== section four ============= */}
                 <section className="public-four">
-                    <h1 className="four-heading">Available Public Workshops</h1>
+                    <h1 className="four-heading">Available Personal Branding</h1>
                     <p className="four-para">
                         Explore our range of public workshop offerings, each designed to provide valuable skills and insights for professional growth.
                     </p>

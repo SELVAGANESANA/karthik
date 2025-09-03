@@ -128,10 +128,17 @@
     margin-right: 10px;
 }
 
+.cor-secondimg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .coress1-img {
     border-radius: 15px;
-    width: 100%;
-    height: 740px;
+    width: 800px;
+    height: 500px;
 }
 
 /* ============= section  third  ============== */
@@ -350,16 +357,22 @@ td {
 }
 
 .img-wrapper-fifth {
-    border-radius: 20px;
+    
     overflow: hidden;
     width: 100%;
-    height: 740px;
+    
     object-fit: cover;
     margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
 
 .team-img {
-    width: 100%;
+    height: 100%;
+    width: 800px;
+    border-radius: 20px;
     display: block;
 }
 
@@ -492,7 +505,7 @@ td {
     }
 
     .coress1-img {
-        height: 600px;
+        height: 500px;
     }
 }
 

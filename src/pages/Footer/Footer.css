@@ -33,7 +33,7 @@
     align-items: start;
     gap: 20px;
 }
-.cont h1{
+.cont h1,.quick-link h1,.port h1{
     color: purple;
 }
 .cont li{
@@ -51,6 +51,7 @@
     text-decoration: none;
     color: rgb(73, 71, 71);
     font-size: 21px;
+ 
 }
 .port li a{
     text-decoration: none;

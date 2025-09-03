@@ -139,6 +139,7 @@
   }
   .cardA{
       color: purple;
+      text-decoration: none;
   }
   .CAR{
       display: flex;

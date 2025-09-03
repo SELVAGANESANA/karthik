@@ -2,7 +2,7 @@ import React from 'react'
 import "./work.css";
 import { useNavigate } from "react-router-dom";  
 // import the image
-import corporate from "../../assets/pro4.jpg";
+import corporate from "../../assets/pro44.jpg";
 import pro20 from '../../assets/pro20.jpg'
 const Work = ({ cards }) => {
     const cardData = [
@@ -52,7 +52,7 @@ const Work = ({ cards }) => {
                         {/* ================== component two ============= */}
                         <div className="component-two">
                             <i class="ri-group-line custom-icon"></i>
-                            <h3 className="public-title">Public Workshops</h3>
+                            <h3 className="public-title">Personal Branding</h3>
                             <h4 className="sub-title-public">Open Enrollment Programs</h4>
                             <img src={pro20} alt="Public Workshop" className='public-img' />
                             <p className="public-para">Join professionals from various industries in our comprehensive public workshop programs.</p>

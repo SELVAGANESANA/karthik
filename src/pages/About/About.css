@@ -1,21 +1,21 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-:root{
-    --lightwhite:rgb(77, 75, 75);
+:root {
+    --lightwhite: rgb(77, 75, 75);
     --lightblue: rgb(231, 243, 247);
 }
 
-p{
+p {
     line-height: 28px;
     font-size: 20px;
     color: var(--lightwhite);
 }
 
-.aboutheader{
+.aboutheader {
     width: 100%;
     height: 40vh;
     background-color: var(--lightblue);
@@ -28,9 +28,15 @@ p{
     padding: 20px 5%;
 }
 
+.aboutheader h1::first-letter{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1;
+   
+}
 
 
-.aboutcomp{
+.aboutcomp {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -38,26 +44,41 @@ p{
     padding: 30px 3%;
 }
 
-.aboutcomp h1{
+.aboutcomp h1 {
     color: purple;
 }
 
-.aboutcomp-img{
+figure {
+    text-align: center;
+    margin: 20px;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 30px;
+    color: gray;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.aboutcomp-img {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.aboutcomp-img img{
-    width: 700px;
+.aboutcomp-img img {
+    width: 800px;
     height: 500px;
-    border-radius: 3%;
     
+    object-fit: contain;
+
+
 }
 
-.aboutvision{
+.aboutvision {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -66,29 +87,29 @@ p{
     align-items: center;
 }
 
-.aboutvisionbox{
+.aboutvisionbox {
     width: 80%;
     padding: 40px 30px;
     background-color: whitesmoke;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
 }
 
 
 
-.aboutvisionbox h1{
+.aboutvisionbox h1 {
     padding-bottom: 20px;
     color: purple;
 }
 
-.aboutcorehead{
+.aboutcorehead {
     text-align: center;
     padding: 40px 7%;
     width: 100%;
 
 }
 
-.aboutcorevalbox{
+.aboutcorevalbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -97,54 +118,54 @@ p{
     padding: 30px 3%;
 }
 
-.aboutcorebox{
+.aboutcorebox {
     padding: 15px;
     width: 400px;
     height: 300px;
     background-color: whitesmoke;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    
+
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
-   
+
 }
 
-.aboutcorebox h1{
-    font-size: 25px ;
+.aboutcorebox h1 {
+    font-size: 25px;
 }
 
-.aboutcorebox span{
+.aboutcorebox span {
     color: purple;
-    background-color:rgb(238, 229, 229);
+    background-color: rgb(238, 229, 229);
     border-radius: 50%;
     height: 60px;
     width: 60px;
     font-size: 30px;
     display: flex;
-     justify-content: center;
+    justify-content: center;
     align-items: center;
 }
 
-.aboutceoimg{
+.aboutceoimg {
     width: 100%;
     padding: 20px;
-      display: flex;
-     justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.aboutceoimg img{
-     width: 700px;
-    height: 500px;
+.aboutceoimg img {
+    width: 700px;
+    height: 450px;
     border-radius: 10px;
     /* box-shadow: 10px 10px 10px rgba(0,0,0,0.5); */
-    
+
 }
 
-.aboutowncontent{
+.aboutowncontent {
     background-color: rgb(231, 243, 247);
     display: flex;
     flex-direction: column;
@@ -152,54 +173,54 @@ p{
     gap: 25px;
 }
 
-.aboutowncontent h2{
+.aboutowncontent h2 {
     color: purple;
 }
 
 
-   /* Aboutachive  */
+/* Aboutachive  */
 
 
-.aboutachive{
+.aboutachive {
     width: 100%;
     padding: 20px;
     background-color: whitesmoke;
-    
+
 }
 
-.aboutachive ul{
+.aboutachive ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
-   
+
 }
 
-.aboutachive ul li{
+.aboutachive ul li {
     font-size: 18px;
     margin-left: 30px;
     color: var(--lightwhite);
 }
 
 
-.abouttrainer{
+.abouttrainer {
     padding: 20px 3%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.aboutexper{
+.aboutexper {
     padding: 10px 3%;
 
 }
 
-.aboutexper h1{
+.aboutexper h1 {
     color: purple;
     margin-bottom: 20px;
 }
 
-.aboutexper ul{
+.aboutexper ul {
     padding-left: 30px;
     font-size: 18px;
     display: flex;
@@ -207,21 +228,21 @@ p{
     gap: 10px;
 }
 
-.aboutimpnum{
+.aboutimpnum {
     width: 100%;
     padding: 30px 5%;
     display: flex;
-    
+
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
-} 
+}
 
-.aboutimgbox{
+.aboutimgbox {
     width: 300px;
     padding: 20px;
     background-color: whitesmoke;
-   
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -229,11 +250,6 @@ p{
     text-align: center;
 }
 
-.aboutimgbox h1{
+.aboutimgbox h1 {
     color: purple;
 }
-
-
-
-
-

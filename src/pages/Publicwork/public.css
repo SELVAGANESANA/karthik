@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -109,16 +109,24 @@
 }
 
 .img-wrapper-two {
-    border-radius: 20px;
+  
     overflow: hidden;
     width: 100%;
-    height: 740px;
+    height: 530px;
     object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 20px 0;
+    padding: 10px;
+    border-radius: 20px;
+    
 }
 
 .public-img1 {
-    width: 100%;
+    border-radius: 20px;
+    width: 800px;
+    height: 100%;
     display: block;
 }
 

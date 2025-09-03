@@ -32,10 +32,15 @@
 /* ============= corporate workshop ========== */
 .container-workshop {
     padding: 20px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .component-one {
-    
+    width: 800px;
     padding: 30px;
     background: rgba(255, 255, 255, 1);
     border-radius: 12px;
@@ -72,6 +77,8 @@
     margin: 20px auto;
     width: 100%;
     height: 600px;
+       border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .corporate-para {
@@ -110,6 +117,7 @@
 
 /* =========== component two ============ */
 .component-two {
+    width: 800px;
     margin-top: 30px;
     padding: 30px;
     background: rgba(255, 255, 255, 1);
@@ -136,6 +144,8 @@
     margin: 20px auto;
     width: 100%;
     height: 600px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .public-para {

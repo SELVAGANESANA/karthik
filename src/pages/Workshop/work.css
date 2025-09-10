@@ -76,7 +76,7 @@
 .corporate-img {
     margin: 20px auto;
     width: 100%;
-    height: 600px;
+    height: 400px;
        border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -143,7 +143,7 @@
 .public-img {
     margin: 20px auto;
     width: 100%;
-    height: 600px;
+    height: 400px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -287,7 +287,7 @@
         padding: 100px 15%;
     }
     .corporate-img, .public-img {
-        height: 500px;
+        height: 400px;
     }
     .cards-workshop {
         gap: 40px;

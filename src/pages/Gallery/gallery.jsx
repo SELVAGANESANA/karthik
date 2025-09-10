@@ -4,7 +4,7 @@ import pro2 from '../../assets/pro2.jpg'
 import pro3 from '../../assets/pro3.jpg';
 import pro4 from '../../assets/pro4.jpg';
 import pro5 from '../../assets/pro5.jpg';
-import pro6 from '../../assets/pro6.jpg';
+
 import pro7 from '../../assets/pro7.jpg';
 import pro8 from '../../assets/pro8.jpg';
 import pro9 from '../../assets/pro9.jpg';
@@ -44,25 +44,54 @@ import pro43 from '../../assets/pro43.jpg';
 import pro44 from '../../assets/pro44.jpg';
 import pro45 from '../../assets/pro45.jpg';
 
-const Gallery= ()=>{
- 
+const Gallery = () => {
+
     const galleryimg = [
-  pro2, pro3, pro4, pro5, pro6, pro7, pro8, pro9, pro10,
-  pro11, pro12, pro13, pro14, pro15, pro16, pro17, pro18, pro19, pro20,
-  pro21, pro22,  pro25, pro26, pro27, pro28, pro29, pro30,
-  pro31, pro32, pro33, pro34, pro35, pro36, pro37, pro38, pro39, pro40,pro41,pro42,pro43,pro44,pro45
-];
+        pro2, pro3, pro4, pro5, pro7, pro8, pro9, pro10,
+        pro11, pro12, pro13, pro14, pro15, pro16, pro17, pro18, pro19, pro20,
+        pro21, pro22, pro25, pro26, pro27, pro28, pro29, pro30,
+        pro31, pro32, pro33, pro34, pro35, pro36, pro37, pro38, pro39, pro40, pro41, pro42, pro43, pro44
+    ];
 
-
-    return(
+    return (
         <div className="overallgallery">
-            <div className="galimg">
-            {galleryimg.map((galimg,index)=>(
-                <img key={index} src={galimg} alt="" />
-            ))}
+            <div className="gallery-btn">
+                <button>Image</button>
+                <a
+                    href="#"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById("galleryvideo").scrollIntoView({
+                            behavior: "smooth",
+                            block: "center"   // options: "start", "center", "end", "nearest"
+                        });
+                    }}>
+                    video </a>
+            </div>
+
+            <div id="galleryimage" className="galimg">
+                {galleryimg.map((galimg, index) => (
+                    <img key={index} src={galimg} alt="" />
+                ))}
+            </div>
+
+            <div id="galleryvideo">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/1dYY3VZayD8?si=7hM53nu1gpgpE3i3"
+                    title="YouTube video"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QZyWaq7sGsE?si=pwFybVlFlzxTw3NT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tULpN1J879M?si=Cm3mVBa0jdwKjjhK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6cPDpvj-wiI?si=YJq-nqx-P3uDjekr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
-    )
+    );
+
 }
 
 export default Gallery;

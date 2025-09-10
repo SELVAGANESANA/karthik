@@ -3,7 +3,8 @@ import "./work.css";
 import { useNavigate } from "react-router-dom";  
 // import the image
 import corporate from "../../assets/pro44.jpg";
-import pro20 from '../../assets/pro20.jpg'
+import pro20 from '../../assets/pro20.jpg';
+import pro52 from '../../assets/pro52.jpg'
 const Work = ({ cards }) => {
     const cardData = [
         {
@@ -54,7 +55,7 @@ const Work = ({ cards }) => {
                             <i class="ri-group-line custom-icon"></i>
                             <h3 className="public-title">Personal Branding</h3>
                             <h4 className="sub-title-public">Open Enrollment Programs</h4>
-                            <img src={pro20} alt="Public Workshop" className='public-img' />
+                            <img src={pro52} alt="Public Workshop" className='public-img' />
                             <p className="public-para">Join professionals from various industries in our comprehensive public workshop programs.</p>
                             <button className='btn-learn' onClick={() => navigate("/public")}>Learn More <i class="ri-arrow-right-line righer-lineing"></i></button>
                         </div>

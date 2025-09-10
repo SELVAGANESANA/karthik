@@ -9,7 +9,7 @@ import img3 from '../../assets/pro39.jpg';
 import pro36 from '../../assets/pro36.jpg'
 import pro38 from '../../assets/pro38.jpg'
 import pro27 from '../../assets/pro27.jpg'
-import pro5 from '../../assets/pro44.jpg';
+import pro18 from '../../assets/pro18.jpg';
 import pro11 from '../../assets/pro11.jpg'
 import { useNavigate } from 'react-router-dom';
 // import the image of sixth section
@@ -147,7 +147,7 @@ const Public = () => {
                             </button>
                         </div>
                         <div className="img-wrapper-two">
-                            <img src={pro5} alt="public session image" className='public-img1' />
+                            <img src={pro18} alt="public session image" className='public-img1' />
                         </div>
                     </div>
                 </div>
@@ -195,7 +195,7 @@ const Public = () => {
                                         </div>
                                     </div>
                                     <p className="four-sub-para">{card.description}</p>
-                                    <button className="four-btn">
+                                    <button className="four-btn" onClick={()=>navigate("/Contact")}>
                                         Register Now <i className="ri-arrow-right-line"></i>
                                     </button>
                                 </div>

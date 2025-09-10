@@ -1,10 +1,31 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
 
-.galimg{
+html {
+    scroll-behavior: smooth;
+}
+
+#galleryvideo {
+    padding: 50px 30px;
+    /* full screen height */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    background: #f9f9f9;
+}
+
+#galleryvideo {
+    scroll-margin-top: 80px;
+    /* adjust based on your header height */
+}
+
+
+.galimg {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +36,40 @@
 
 }
 
-.galimg img{
+.gallery-btn {
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    padding-left: 8%;
+
+}
+
+.gallery-btn button {
+
+    padding: 10px 50px;
+    background-color: transparent;
+    border: 2px solid purple;
+    color: purple;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.gallery-btn a {
+    background-color: purple;
+    color: white;
+    padding: 10px 50px;
+    font-size: 20px;
+    border: 2px solid purple;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+.gallery-btn button:hover{
+    background-color: transparent;
+}
+
+.galimg img {
     height: 300px;
     width: 300px;
     border-radius: 10px;
@@ -23,20 +77,20 @@
     animation-duration: 1s;
     animation-timeline: view();
     /* animation-range: 20% 80%; */
-    animation-range:entry 0% cover 40% ;
-    
+    animation-range: entry 0% cover 40%;
+
 }
 
 @keyframes imageani {
-    from{
+    from {
         opacity: 0.8;
         scale: 0.5;
     }
-    to{
+
+    to {
         opacity: 1;
         scale: 1;
     }
 }
-
 
 

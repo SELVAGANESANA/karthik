@@ -52,6 +52,10 @@ const About = () => {
                     even slightly stunned.”</p>
             </div>
 
+            <div className="aboutvideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tULpN1J879M?si=Cm3mVBa0jdwKjjhK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
             {/* aboutcomp  */}
 
             <div className="aboutcomp">
@@ -108,7 +112,9 @@ const About = () => {
                 <div className="aboutceoimg">
 
                     <figure>
-                        <img src={profileimg} alt="Karthik, CEO & Founder of AGRISA" />
+                        <div className="figimg">
+                            <img src={profileimg} alt="Karthik, CEO & Founder of AGRISA" />
+                        </div>
                         <figcaption>
                             <strong>Karthik</strong><br />
                             CEO & Founder

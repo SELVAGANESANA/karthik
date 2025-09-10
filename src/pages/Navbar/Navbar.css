@@ -21,10 +21,8 @@
 }
 
 .navleft{
-    width: 100px;
-    height: 100%;
-  
-
+    width: 70px;
+    height: 95%;
 }
 
 .navleft img{
@@ -49,6 +47,15 @@
     font-weight: 500;
 
 }
+
+.navdownload a{
+    background-color: white;
+    border-radius: 5px;
+    color: purple;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
 .whatsapp{
     
     position: fixed;

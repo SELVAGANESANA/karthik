@@ -31,7 +31,7 @@ export default function Foot() {
     const connect = [
         {
             title: "Contact us",
-            email: "karthy81@agrisa.co.in",
+            email: "Karthik@agrisa.co.in",
             phNO: "+919840600638",
             linkedin: "linkedin"
         }
@@ -69,7 +69,7 @@ export default function Foot() {
                         {connect.map((con, index) => (
                             <div className="cont" key={index}>
                                 <h1>{con.title}</h1>
-                                <li> <MdEmail />&nbsp;&nbsp;&nbsp; <a href="mailto:karthy81@gmail.com">{con.email}</a></li>
+                                <li> <MdEmail />&nbsp;&nbsp;&nbsp; <a href="mailto:Karthik@agrisa.co.in">{con.email}</a></li>
                                 <li> <FaPhoneAlt />&nbsp;&nbsp;&nbsp;<a href="about">{con.phNO}</a></li>
                                 <li> <IoLogoWhatsapp />&nbsp;&nbsp;&nbsp;<a href="https://wa.me/919840187701" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a></li>
                                 <li> <ImLinkedin />&nbsp;&nbsp;&nbsp;<a href="http://linkedin.com/in/karthik-k-swami-b074718">{con.linkedin}</a></li>

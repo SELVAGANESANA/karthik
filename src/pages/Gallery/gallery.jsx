@@ -88,7 +88,12 @@ const Gallery = () => {
                 ))}
             </div>
 
+            <div className="galvideo-title">
+                <h1>Programs</h1>
+            </div>
+
             <div id="galleryvideo">
+
                 <iframe
                     width="560"
                     height="315"

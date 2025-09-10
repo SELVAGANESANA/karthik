@@ -53,9 +53,10 @@
     font-size: 21px;
  
 }
-.port li a{
+.port li{
     text-decoration: none;
     color: rgb(73, 71, 71);
+
     font-size: 21px;
 }
 li a:hover{

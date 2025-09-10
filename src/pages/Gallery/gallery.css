@@ -8,6 +8,13 @@ html {
     scroll-behavior: smooth;
 }
 
+.galvideo-title{
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+
 #galleryvideo {
     padding: 50px 30px;
     /* full screen height */

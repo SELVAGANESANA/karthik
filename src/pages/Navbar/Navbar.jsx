@@ -24,7 +24,7 @@ const Navbar = () => {
             </div>
 
             <div className="navdownload">
-                 <a href="https://drive.google.com/file/d/1agr_5zZrtS-5GaTBnyZ3gvVDB5pQa2V6/view?usp=drive_link">Download</a>
+                 <a href="https://drive.google.com/file/d/1agr_5zZrtS-5GaTBnyZ3gvVDB5pQa2V6/view?usp=drive_link">Download Profile</a>
             </div>
 
             <div className="whatsapp">

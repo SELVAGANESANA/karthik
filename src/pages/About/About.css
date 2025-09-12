@@ -92,11 +92,10 @@ figcaption {
 }
 
 .aboutcomp-img img {
-    width: 800px;
+    width: 100%;
     height: 500px;
     object-fit: contain;
-
-
+    
 }
 
 .aboutvision {
@@ -274,4 +273,41 @@ figcaption {
 
 .aboutimgbox h1 {
     color: purple;
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .aboutceoimg img {
+        width: 550px;
+    }
+    .aboutcomp-img img {
+        height: unset;
+    }
+   
+}
+
+@media screen and (min-width:400px) and (max-width:600px) {
+    .aboutceoimg img {
+        width: 350px;
+    }
+    .aboutcomp-img img {
+        height: unset;
+    }
+     .aboutheader{
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:400px) {
+    .aboutceoimg img {
+        width: 280px;
+    }
+    .aboutcomp-img img {
+        height: unset;
+    }
+     .aboutheader{
+        height: 40vh;
+    }
+    .aboutcorebox {
+        width: 100%;
+    }
 }

@@ -1,15 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import { FiMessageCircle } from "react-icons/fi";
 import { IoMdTime } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
-// import contactImg from "../assets/contact.jpg";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-
+import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 
 export default function Contact() {
   const contInfo = [
@@ -17,22 +13,22 @@ export default function Contact() {
       icon: <MdEmail />,
       name: "Email us",
       para: "Send us an email and we'll respond within 24 hours",
-      contact: "karthy81@gmail.com",
-      link: "mailto:karthy81@gmail.com",
+      contact: "Karthik@agrisa.co.in",
+      link: "mailto:Karthik@agrisa.co.in",
     },
     {
       icon: <IoCallSharp />,
       name: "Call us",
       para: "Speak directly with our team in business hours",
-      contact: "+91 98406 00638",
+      contact: "+919840187701",
       link: "tel:+919840600638",
     },
     {
       icon: <FiMessageCircle />,
       name: "WhatsApp us",
       para: "Message us on WhatsApp for quick responses",
-      contact: "9840187701",
-      link: "https://wa.me/919840187701",
+      contact: "9840600638",
+      link: "https://wa.me/919840600638",
     },
   ];
 
@@ -52,18 +48,53 @@ export default function Contact() {
     {
       icon: <FaLocationDot />,
       name: "Our location",
-      address:"Karthik GF- B West Moor",
-      add1: "Wingate Gardens, 4,60," ,
-      add2:"School Road, RA Puram, Chennai - 28",
-      // img: contactImg,
+      address: "Karthik GF- B West Moor",
+      add1: "Wingate Gardens, 4,60,",
+      add2: "School Road, RA Puram, Chennai - 28",
     },
   ];
-  const ico = [
-    {
-      icon:<FaInstagram/>,
-      icon1:<FaLinkedinIn/>
-    }
-  ]
+
+  // ---- Google Sheet Form ----
+// ---- Google Sheet Form ----
+const [formData, setFormData] = useState({
+  fullname: "",
+  email: "",
+  phone: "",
+  message: "",
+});
+const [loading, setLoading] = useState(false); // NEW state
+
+const handleChange = (e) => {
+  setFormData({ ...formData, [e.target.id]: e.target.value });
+};
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true); // show loading message
+
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbx0WA5uH2GUs9x_kB81lKjUPiBSkU5qVlxsttnZwbqu6tnIaOB0v_F2zG9Vf4FpaiqK/exec",
+      {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+        mode: "no-cors",
+      }
+    );
+
+    alert("✅ Message sent successfully!");
+    setFormData({ fullname: "", email: "", phone: "", message: "" });
+  } catch (error) {
+    console.error("Error:", error);
+    alert("❌ Something went wrong!");
+  } finally {
+    setLoading(false); // hide loading message
+  }
+};
+
 
   return (
     <div className="overall-cont">
@@ -72,8 +103,8 @@ export default function Contact() {
         <h1>Get in Touch</h1>
         <div className="title-con-p">
           <p>
-            Ready to transform your organization? Let’s
-            start a conversation about how we can help you achieve your goals.
+            Ready to transform your organization? Let’s start a conversation
+            about how we can help you achieve your goals.
           </p>
         </div>
       </div>
@@ -91,36 +122,49 @@ export default function Contact() {
         </div>
         <div className="Input">
           <div className="in-put">
-            <form>
-              <label htmlFor="fullname">Full Name*</label> <br />
+            <form onSubmit={handleSubmit}>
+              <label htmlFor="fullname">Full Name*</label>
               <input
                 type="text"
                 id="fullname"
                 placeholder="Enter your Full Name"
+                value={formData.fullname}
+                onChange={handleChange}
                 required
               />
-              <br />
+
               <label htmlFor="email">Email ID*</label>
-              <br />
               <input
                 type="email"
                 id="email"
                 placeholder="Enter your Email Id"
+                value={formData.email}
+                onChange={handleChange}
                 required
               />
-              <br />
-              <label htmlFor="phone">Phone Number*</label> <br />
+
+              <label htmlFor="phone">Phone Number*</label>
               <input
                 type="tel"
                 id="phone"
                 placeholder="Enter your Mobile Number"
+                value={formData.phone}
+                onChange={handleChange}
                 required
               />
-              <br />
+
               <label htmlFor="message">Write your message</label>
-              <br />
-              <textarea id="message" placeholder="Enter messages..."></textarea>
-              <button className="in-put-button">Send Message</button>
+              <textarea
+                id="message"
+                placeholder="Enter messages..."
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
+
+              <button type="submit" className="in-put-button" disabled={loading}>
+                {loading ? "⏳ Please wait..." : "Send Message"}
+              </button>
+
             </form>
           </div>
         </div>
@@ -148,7 +192,7 @@ export default function Contact() {
             </div>
           ))}
 
-          {/* Office Hours Section */}
+          {/* Office Hours */}
           <div className="office-hours">
             {officeHours.map((oh, index) => (
               <div className="CAR" key={index}>
@@ -165,53 +209,64 @@ export default function Contact() {
             ))}
           </div>
 
-          {/* Location Section */}
+          {/* Location */}
           <div className="our-locat">
             {locat.map((ol, index) => (
               <div className="Our" key={index}>
-                <div className="icon">
-                  <span>{ol.icon}</span> <h2>{ol.name}</h2>
-                </div>
+                <div className="icon">{ol.icon}</div>
                 <div className="address">
+                  <h2>{ol.name}</h2>
                   <p>{ol.address}</p>
                   <p>{ol.add1}</p>
                   <p>{ol.add2}</p>
                 </div>
               </div>
             ))}
-            {/* <div className="image">
-            <img src={contactImg} alt="" />
-            </div> */}
           </div>
         </div>
-        {/*------ WithUs----- */}
+
+        {/* Social Media */}
         <div className="withus">
-                  <h1>Connect Us</h1>
-                  <div className="withus-p">
-                    <p>Follow us on social media for the latest updates, insights, and behind-the-scenes content from our workshops and events.</p>
-                  </div>
-                  <div className="ico">
-                  <div className="icons-with">
-                    <i><FaLinkedinIn/></i>
-                  </div>  
-                  <div className="icons-with">
-                    <i> <FaFacebookF/> </i>
-                  </div> 
-                  <div className="icons-with">
-                    <i><FaInstagram/></i>
-                  </div>   
-                  </div>    
-        </div>
-        {/* ----Ready--- */}
-          <div className="ready">
-            <h1>Ready to Start Your Transformation Journey?</h1>
-            <div className="ready-p">
-              <p>Don't wait to unlock your organization's potential. Contact us today and let's discuss how we can help you achieve extraordinary results.</p>
+          <h1>Connect Us</h1>
+          <div className="withus-p">
+            <p>
+              Follow us on social media for the latest updates, insights, and
+              behind-the-scenes content from our workshops and events.
+            </p>
+          </div>
+          <div className="ico">
+            <div className="icons-with">
+              <i>
+                <FaLinkedinIn />
+              </i>
             </div>
-            <div className="but">
-              <button>Email Us Now</button>
+            <div className="icons-with">
+              <i>
+                <FaFacebookF />
+              </i>
+            </div>
+            <div className="icons-with">
+              <i>
+                <FaInstagram />
+              </i>
             </div>
           </div>
+        </div>
+
+        {/* CTA */}
+        <div className="ready">
+          <h1>Ready to Start Your Transformation Journey?</h1>
+          <div className="ready-p">
+            <p>
+              Don't wait to unlock your organization's potential. Contact us
+              today and let's discuss how we can help you achieve extraordinary
+              results.
+            </p>
+          </div>
+          <div className="but">
+            <button>Email Us Now</button>
+          </div>
+        </div>
       </div>
     </div>
   );

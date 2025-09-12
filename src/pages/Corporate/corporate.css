@@ -491,10 +491,296 @@ td {
     color: #6725e1;
 }
 
+/* ========== MEDIA QUERIES FOR RESPONSIVENESS ========== */
+
+/* ==== TABLETS (768px - 1023px) ==== */
+@media (max-width: 1023px) {
+
+  .first {
+    padding: 20px 4%;
+    height: auto;
+    text-align: center;
+  }
+
+  .second {
+    padding: 20px 4%;
+  }
+
+  .title-second {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .para1-second,
+  .para2-second {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .button-groups {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .schedule-btn,
+  .back-btn {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .coress1-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .third-para {
+    padding: 15px 10%;
+  }
+
+  .third-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .third-card {
+    width: 90%;
+  }
+
+  .fourth-img-container {
+    flex-direction: column;
+  }
+
+  .cardimg-content {
+    width: 100%;
+  }
+
+  .fifth-para {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .img-wrapper-fifth {
+    height: auto;
+  }
+
+  .team-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .para-sixth {
+    padding: 10px 10%;
+  }
+
+  .sixth-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sixth-content {
+    width: 90%;
+  }
+
+  .seventh-heading {
+    font-size: 28px;
+  }
+
+  .seventh-para {
+    padding: 10px 5%;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+
+/* ==== MOBILE DEVICES (up to 767px) ==== */
+@media (max-width: 767px) {
+
+  .first {
+    padding: 16px 3%;
+    text-align: center;
+  }
+
+  .title-first,
+  .slzae,
+  .sub-title-first {
+    display: block;
+    margin: 4px 0;
+  }
+
+  .second-soluc {
+    font-size: 12px;
+    padding: 5px 6px;
+  }
+
+  .title-second {
+    font-size: 24px;
+    padding: 15px 0 10px;
+  }
+
+  .para1-second,
+  .para2-second {
+    font-size: 16px;
+  }
+
+  .button-groups {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .schedule-btn,
+  .back-btn {
+    width: 100%;
+  }
+
+  .coress1-img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .third-heading1 {
+    font-size: 26px;
+  }
+
+  .third-para {
+    font-size: 16px;
+    padding: 10px 5%;
+  }
+
+  .third-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .purple-iconer {
+    font-size: 28px;
+    padding: 15px;
+  }
+
+  .third-sub-heading {
+    font-size: 18px;
+  }
+
+  .fourth-heading {
+    font-size: 26px;
+  }
+
+  .fourth-para {
+    font-size: 16px;
+    padding: 10px 5%;
+  }
+
+  .cardimg-content {
+    width: 100%;
+  }
+
+  .cardimg-title {
+    font-size: 20px;
+  }
+
+  .timeing {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .fourth-sub-para {
+    font-size: 14px;
+  }
+
+  .fifth-heading {
+    font-size: 24px;
+  }
+
+  .fifth-para {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  td {
+    font-size: 14px;
+  }
+
+  .img-wrapper-fifth {
+    height: auto;
+  }
+
+  .team-img {
+    width: 100%;
+  }
+
+  .sixth-heading {
+    font-size: 24px;
+  }
+
+  .para-sixth {
+    font-size: 16px;
+    padding: 10px 5%;
+  }
+
+  .sixth-content {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .sixth-title {
+    font-size: 16px;
+  }
+
+  .sixth-para {
+    font-size: 13px;
+  }
+
+  .seventh-heading {
+    font-size: 24px;
+  }
+
+  .seventh-para {
+    font-size: 15px;
+    padding: 10px 5%;
+  }
+
+  .success-btn-seventh {
+    font-size: 16px;
+    min-width: 100%;
+  }
+
+  .schedule {
+    font-size: 16px;
+    min-width: 100%;
+  }
+}
+
+
+/* ==== SMALL LAPTOPS/DESKTOPS (1024px – 1366px) ==== */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .coress1-img,
+  .team-img {
+    width: 90%;
+    height: auto;
+  }
+
+  .third-card {
+    width: 48%;
+  }
+
+  .sixth-content {
+    width: 48%;
+  }
+}
 
 /* ================= RESPONSIVE DESIGN ================= */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .title-second {
         font-size: 32px;
     }
@@ -634,4 +920,4 @@ td {
     .seventh-para {
         font-size: 14px;
     }
-}
+} */

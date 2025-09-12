@@ -119,8 +119,21 @@
       height: 50px;
       font-size: 23px;
   }
-  .cards, .office-hours,.our-locat{
+  .cards, .office-hours{
       min-height: 200px;
+      width: 45%;
+      background-color: whitesmoke;
+      box-shadow: 0px 3px 8px 0px rgb(82, 80, 80);
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap:30px;
+      border-radius: 5px;
+      padding: 10px;
+      font-family: sans-serif;
+  }
+  .our-locat{
+        min-height: 200px;
       width: 45%;
       background-color: whitesmoke;
       box-shadow: 0px 3px 8px 0px rgb(82, 80, 80);
@@ -165,10 +178,10 @@
   }
   .Our{
       display: flex;
-      flex-direction: column;
-      justify-content:start;
-      align-items: start;
-      gap: 10px;
+     
+      justify-content:center;
+      align-items: center;
+      gap: 20px;
       padding: 10px;
       font-family: sans-serif;
   }
@@ -241,7 +254,7 @@
   .ready-p p{
       color: rgba(214, 202, 202,0.8);
   }
-  button{
+  .but button{
       border-radius: 7px;
       padding: 15px 35px;
       border:none;
@@ -249,7 +262,7 @@
       background-color: purple;
       color: white;
   }
-  button:hover{
+  .but button:hover{
       background-color: rgb(19, 19, 255);
   }
 
@@ -413,8 +426,19 @@
       font-size: 16px;
       width: 100%;
     }
-
-    button {
+    .Our,.CAR{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+    }
+    .Our p,.CAR p{
+      font-size: 16px;
+    }
+    .Our h2{
+      font-size: 17px;
+    }
+    .but button {
       font-size: 16px;
       padding: 12px 25px;
     }

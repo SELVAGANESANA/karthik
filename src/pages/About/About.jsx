@@ -9,6 +9,8 @@ import logo2 from '../../assets/logo2.PNG';
 import gamelogo from "../../assets/gamelogo.jpg"
 import gamelogoo from "../../assets/gamelogoo.png"
 import logo1 from '../../assets/logo1.PNG'
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 const About = () => {
 
     const aboutcomp = [{
@@ -42,7 +44,12 @@ const About = () => {
             title: "Proven Results",
             content: "Backed by 850+ workshops and collaborations with leading organizations across IT, BFSI, manufacturing, education, and public sectors"
         }
-    ]
+    ];
+   
+  const { ref, inView } = useInView({
+    triggerOnce: true, // only animate once
+    threshold: 0.3,    // start when 30% visible
+  });
 
     return (
         <div className="aboutoverall">
@@ -60,7 +67,7 @@ const About = () => {
 
             <div className="aboutcomp">
                 <h1>Building Tomorrow's Organization Today</h1>
-                <p>AGRISA, learning is approached as serious play — a process where games, storytelling, and interactive formats unlock leadership qualities, enhance team dynamics, and nurture problem-solving skills. </p>
+                <p> At AGRISA, learning is approached as serious play — a process where games, storytelling, and interactive formats unlock leadership qualities, enhance team dynamics, and nurture problem-solving skills. </p>
                 <p>The company designs customized learning journeys for a diverse spectrum of clients, ranging from Fortune 500 corporations and IT giants to manufacturing leaders, banks, public sector enterprises, and educational institutions. </p>
                 <p>Whether it is a senior leadership team navigating complex decision-making through simulations, or a group of students experiencing collaboration through critical conversation games, AGRISA’s sessions are crafted to deliver both emotional resonance and practical outcomes.</p>
                 <p>The company’s expertise covers a wide range of learning areas, including leadership and collaborative decision-making, negotiation and conflict resolution, communication and stress management, employee engagement programs, outbound team-building workshops, and campus-to-corporate transitions.</p>
@@ -82,7 +89,7 @@ const About = () => {
 
             <div className="aboutvision">
                 {aboutcomp.map((visiondata, index) => (
-                    <div className="aboutvisionbox">
+                    <div key={index} className="aboutvisionbox">
                         <h1 key={index}>{visiondata.title} </h1>
                         <p key={index}>{visiondata.content} </p>
                     </div>
@@ -176,29 +183,42 @@ const About = () => {
 
             {/* aboutimpactnum  */}
 
-            <div className="aboutimpnum">
+          <div className="aboutimpnum" ref={ref}>
+      <div className="aboutimgbox aboutimgbox1">
+        <h1>
+          {inView && <CountUp end={19} duration={2} />}+
+        </h1>
+        <p>professional experience</p>
+      </div>
 
-                <div className="aboutimgbox aboutimgbox1">
-                    <h1>19+</h1>
-                    <p>professional experience</p></div>
-                <div className="aboutimgbox aboutimgbox2">
-                    <h1>850+</h1>
-                    <p>sessions delivered so far.</p></div>
-                <div className="aboutimgbox aboutimgbox3">
-                    <h1>700+</h1>
-                    <p>corporate workshops</p></div>
-                <div className="aboutimgbox aboutimgbox4">
-                    <h1>150+</h1>
-                    <p>public programs</p>
-                </div>
-                <div className="aboutimgbox aboutimgbox5">
-                    <h1>6,000+</h1>
-                    <p>Trained participants nationwide</p>
-                </div>
+      <div className="aboutimgbox aboutimgbox2">
+        <h1>
+          {inView && <CountUp end={850} duration={3} />}+
+        </h1>
+        <p>sessions delivered so far.</p>
+      </div>
 
+      <div className="aboutimgbox aboutimgbox3">
+        <h1>
+          {inView && <CountUp end={700} duration={3} />}+
+        </h1>
+        <p>corporate workshops</p>
+      </div>
 
+      <div className="aboutimgbox aboutimgbox4">
+        <h1>
+          {inView && <CountUp end={150} duration={2} />}+
+        </h1>
+        <p>public programs</p>
+      </div>
 
-            </div>
+      <div className="aboutimgbox aboutimgbox5">
+        <h1>
+          {inView && <CountUp end={6000} duration={4} />}+
+        </h1>
+        <p>Trained participants nationwide</p>
+      </div>
+    </div>
 
 
 

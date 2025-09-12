@@ -10,7 +10,12 @@ import pro36 from '../../assets/pro36.jpg'
 import pro38 from '../../assets/pro38.jpg'
 import pro27 from '../../assets/pro27.jpg'
 import pro18 from '../../assets/pro18.jpg';
-import pro11 from '../../assets/pro11.jpg'
+import pro11 from '../../assets/pro11.jpg';
+import pro13 from '../../assets/pro13.jpg';
+import pro32 from '../../assets/pro32.jpg';
+import pro46 from '../../assets/pro46.jpg';
+import pro49 from '../../assets/pro49.jpg';
+import pro50 from '../../assets/pro50.jpg';
 import { useNavigate } from 'react-router-dom';
 // import the image of sixth section
 import participate from "../../assets/pro2.jpg";
@@ -55,7 +60,7 @@ const Public = () => {
             day: "4 hours",
             role: "Freelancers, Entrepreneurs, Job Seekers",
             description: "Discover how to build a compelling personal brand that resonates with your audience and opens new career opportunities.",
-            image: img1
+            image: pro13
         },
         {
             title: "Creative Problem Solving",
@@ -150,6 +155,9 @@ const Public = () => {
                             <img src={pro18} alt="public session image" className='public-img1' />
                         </div>
                     </div>
+                </div>
+                <div className="publicvideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6cPDpvj-wiI?si=Mlm4FjIs_hQHK7xT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
                 {/* ================= section three ================= */}
@@ -248,8 +256,11 @@ const Public = () => {
                         </tbody>
                     </table>
 
-                    <div className="img-wrapper-fifth">
+                    <div className=" pubimg" >
                         <img src={pro38} alt="team img" className='team-img' />
+                        <img src={pro50} alt="team img" className='team-img' />
+                        <img src={pro49} alt="team img" className='team-img' />
+                        <img src={pro32} alt="team img" className='team-img' />
                     </div>
                 </section>
 

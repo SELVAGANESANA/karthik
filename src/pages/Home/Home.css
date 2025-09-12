@@ -97,7 +97,7 @@ p {
 
 
 .homesecond-img {
-    height: 600px;
+
     width: 100%;
     display: flex;
     justify-content: center;
@@ -303,4 +303,115 @@ p {
 .homefooter-btn button+button {
     background-color: transparent;
     border: 2px solid purple;
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .homeheader p{
+        font-size: 19px;
+    }
+    .homeheader p br{
+        display: none;
+    }
+    .homeheader h1{
+        font-size: 23px;
+    }
+    .homeslid {
+        width: 90%;
+    }
+    .homeourcompany{
+        padding: 2% 4%;
+    }
+    .homefounder-img{
+        height: 500px;
+    }
+    .homefounder-img img{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:390px) and (max-width:600px) {
+    .homeheader p{
+        font-size: 19px;
+    }
+
+    .homeheader p br{
+        display: none;
+    }
+
+    .homeheader{
+        padding: 20px 2%;
+    }
+    .homeheader h1{
+        font-size: 20px;
+    }
+    .homeslid {
+        width: 90%;
+       
+    }
+    .homeourcompany{
+        padding: 2% 4%;
+    }
+    .homefounder-img{
+        height: 500px;
+    }
+    .homefounder-img img{
+        width: 380px;
+    }
+    .homehead-btn button{
+        padding: 8px 10px;
+    } 
+    .homeheader h2 {
+        font-size: 28px;
+    }
+    .homeourcompany p,.homefounder p,.home-whatdo p{
+        font-size: 19px;
+    }
+  
+    .homefooter-btn button{
+        padding: 8px 10px;
+    }
+}
+@media screen and (min-width:300px) and (max-width:390px) {
+    .homeheader p{
+        font-size: 15px;
+    }
+
+    .homeheader p br{
+        display: none;
+    }
+
+    .homeheader{
+        padding: 20px 2%;
+    }
+    .homeheader h1{
+        font-size: 20px;
+    }
+    .homeslid {
+        width: 90%;
+       
+    }
+    .homeourcompany{
+        padding: 2% 4%;
+    }
+    .homefounder-img{
+        height: 500px;
+    }
+    .homefounder-img img{
+        width: 300px;
+    }
+    .homehead-btn button{
+        padding: 8px 10px;
+        font-size: 14px;
+    } 
+    .homeheader h2 {
+        font-size: 28px;
+    }
+    .homeourcompany p,.homefounder p,.home-whatdo p{
+        font-size: 15px;
+    }
+  
+    .homefooter-btn button{
+        padding: 8px 5px;
+        font-size: 14px;
+    }
 }

@@ -47,8 +47,9 @@ export default function Foot() {
                                 <li>{FOOT.clik1}</li>
                                 <li>{FOOT.clik2}</li>
                                 <li>{FOOT.clik3}</li>
-                                <li>{FOOT.clik4}</li>
+                                
                                 <li>{FOOT.clik5}</li>
+                                <li>{FOOT.clik4} & <br /> Negotiation skills</li>
 
                             </div>
                         ))}

@@ -53,7 +53,7 @@ const Work = ({ cards }) => {
                         {/* ================== component two ============= */}
                         <div className="component-two">
                             <i class="ri-group-line custom-icon"></i>
-                            <h3 className="public-title">Personal Branding</h3>
+                            <h3 className="public-title">Personal effectiveness</h3>
                             <h4 className="sub-title-public">Open Enrollment Programs</h4>
                             <img src={pro52} alt="Public Workshop" className='public-img' />
                             <p className="public-para">Join professionals from various industries in our comprehensive public workshop programs.</p>

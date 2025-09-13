@@ -60,7 +60,7 @@ const Gallery = () => {
 
     const galleryimg = [
         pro2, pro3, pro4, pro5, pro7, pro8, pro9, pro10,
-        pro11, pro12, pro13, pro14, pro15, pro16, pro17, pro18, pro19, pro20,
+        pro11, pro12, pro13, pro15, pro16, pro17, pro18, pro19, pro20,
         pro21, pro22, pro25, pro26, pro27, pro28, pro29, pro30,
         pro31, pro32, pro33, pro34, pro35, pro36, pro37, pro38, pro39, pro40, pro41, pro42, pro43, pro44, pro45,pro46,pro47,pro48,pro49,pro50,
         pro51, pro52, pro53, pro54, pro55, pro56  

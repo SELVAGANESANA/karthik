@@ -16,6 +16,9 @@ import pro32 from '../../assets/pro32.jpg';
 import pro46 from '../../assets/pro46.jpg';
 import pro49 from '../../assets/pro49.jpg';
 import pro50 from '../../assets/pro50.jpg';
+import pro58 from '../../assets/pro58.jpg';
+import pro59 from '../../assets/pro59.jpg';
+import pro60 from '../../assets/pro60.jpg';
 import { useNavigate } from 'react-router-dom';
 // import the image of sixth section
 import participate from "../../assets/pro2.jpg";
@@ -66,7 +69,7 @@ const Public = () => {
             title: "Creative Problem Solving",
             day: "4 hours",
             role: "Anyone seeking innovation skills",
-            description: "Unlock your creative potential and learn innovative techniques to approach and solve complex problems in your personal and professional life.",
+            description: "Unlock your creative potential and learn to approach and solve complex problems in your personal and professional life.",
             image: img2
         },
         {
@@ -81,21 +84,21 @@ const Public = () => {
             day: "4 hours",
             role: "Aspiring Leaders, Team Leads",
             description: "Develop essential leadership skills such as decision-making, delegation, and motivating teams to achieve collective goals.",
-            image: pro36
+            image: pro58
         },
         {
             title: "Stress Management Workshop",
             day: "4 hours",
             role: "Students, Professionals, Anyone seeking balance",
             description: "Learn practical tools and techniques to manage stress, build resilience, and maintain mental well-being in daily life.",
-            image: pro11
+            image: pro60
         },
         {
             title: "Innovation & Design Thinking",
             day: "4 hours",
             role: "Entrepreneurs, Innovators, Managers",
             description: "Explore design thinking methods and creative frameworks to spark innovation and drive impactful solutions.",
-            image: pro27
+            image: pro59
         }
     ]
 
@@ -129,7 +132,7 @@ const Public = () => {
                 <section className="public-one">
                     <span className="one-first">Workshops</span>
                     <span className='slazae'>  /  </span>
-                    <span className="sub-title-one">Personal Branding</span>
+                    <span className="sub-title-one">Personal effectiveness</span>
                 </section>
 
                 {/* ============== section two ==================== */}
@@ -138,7 +141,7 @@ const Public = () => {
                         <h3 className="public-soluc">
                             <i className="ri-group-line custom-publicicon"></i> Open Enrollment
                         </h3>
-                        <h1 className="title-public-two">Personal Branding</h1>
+                        <h1 className="title-public-two">Personal effectiveness</h1>
                         <p className="para-public-two">
                             Join professionals from diverse industries in our comprehensive
                             public workshop programs designed to accelerate your career and expand your network.
@@ -162,7 +165,7 @@ const Public = () => {
 
                 {/* ================= section three ================= */}
                 <section className="public-three">
-                    <h1 className="three-heading1">Why Join Our Personal Branding?</h1>
+                    <h1 className="three-heading1">Why Join Our Personal effectiveness?</h1>
                     <p className="three-para">
                         Our public workshops offer unique opportunities to learn, grow, and connect
                         with professionals from various industries and backgrounds.
@@ -180,7 +183,7 @@ const Public = () => {
 
                 {/* =============== section four ============= */}
                 <section className="public-four">
-                    <h1 className="four-heading">Available Personal Branding</h1>
+                    <h1 className="four-heading">Available Personal effectiveness</h1>
                     <p className="four-para">
                         Explore our range of public workshop offerings, each designed to provide valuable skills and insights for professional growth.
                     </p>

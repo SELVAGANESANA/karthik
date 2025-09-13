@@ -14,7 +14,7 @@ export default function Foot() {
             clik1: "Corporate Workshops",
             clik2: "Public Workshops",
             clik3: "Leadership Development",
-            clik4: "Success Stories",
+            clik4: "conflict management",
             clik5:"Team Building Activities"
         }
     ]
@@ -71,7 +71,7 @@ export default function Foot() {
                                 <h1>{con.title}</h1>
                                 <li> <MdEmail />&nbsp;&nbsp;&nbsp; <a href="mailto:Karthik@agrisa.co.in">{con.email}</a></li>
                                 <li> <FaPhoneAlt />&nbsp;&nbsp;&nbsp;<a href="about">{con.phNO}</a></li>
-                                <li> <IoLogoWhatsapp />&nbsp;&nbsp;&nbsp;<a href="https://wa.me/919840187701" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a></li>
+                                <li> <IoLogoWhatsapp />&nbsp;&nbsp;&nbsp;<a href="https://wa.me/919840600638" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a></li>
                                 <li> <ImLinkedin />&nbsp;&nbsp;&nbsp;<a href="http://linkedin.com/in/karthik-k-swami-b074718">{con.linkedin}</a></li>
                             </div>
                         ))}

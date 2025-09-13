@@ -4,6 +4,7 @@ import "./corporate.css";
 import corsess1 from "../../assets/pro45.jpg";
 // import fourth images
 
+import pro2 from '../../assets/pro2.jpg';
 import pro28 from '../../assets/pro28.jpg';
 import pro44 from '../../assets/pro44.jpg';
 import pro9 from '../../assets/pro9.jpg';
@@ -66,7 +67,7 @@ const cardFourth = [
         day: "1 Day",
         role: "Managers, HR, Client-Facing Teams",
         description: "Practical roleplays and simulations to master negotiation techniques, manage conflicts constructively, and achieve win–win solutions.",
-        image: pro19
+        image: pro2
     },
     {
         title: "Team Building & Engagement Lab",

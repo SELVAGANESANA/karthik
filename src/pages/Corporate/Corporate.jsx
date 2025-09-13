@@ -179,7 +179,7 @@ const cardFourth = [
                                         </div>
                                     </div>
                                     <p className="fourth-sub-para">{card.description}</p>
-                                    <button className="fourth-btn">Learn More <i class="ri-arrow-right-line"></i></button>
+                                    <button onClick={()=>navigate("/Contact")} className="fourth-btn">Register <i class="ri-arrow-right-line"></i></button>
                                 </div>
                             </div>
                         ))}
@@ -253,8 +253,8 @@ const cardFourth = [
                         transformation goals and drive measurable results.
                     </p>
                     <div className="button-group">
-                        <button className="schedule">Schedule Free Consultation <i class="ri-arrow-right-line righer-lineing"></i></button>
-                        <button className='success-btn-seventh'>View Success Stories </button>
+                        <button onClick={()=>navigate("/Contact")} className="schedule">Schedule Free Consultation <i class="ri-arrow-right-line righer-lineing"></i></button>
+                        {/* <button className='success-btn-seventh'>View Success Stories </button> */}
                     </div>
                 </section>
             </main>

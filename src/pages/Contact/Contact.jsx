@@ -55,45 +55,45 @@ export default function Contact() {
   ];
 
   // ---- Google Sheet Form ----
-// ---- Google Sheet Form ----
-const [formData, setFormData] = useState({
-  fullname: "",
-  email: "",
-  phone: "",
-  message: "",
-});
-const [loading, setLoading] = useState(false); // NEW state
+  // ---- Google Sheet Form ----
+  const [formData, setFormData] = useState({
+    fullname: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false); // NEW state
 
-const handleChange = (e) => {
-  setFormData({ ...formData, [e.target.id]: e.target.value });
-};
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setLoading(true); // show loading message
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true); // show loading message
 
-  try {
-    await fetch(
-      "https://script.google.com/macros/s/AKfycbx0WA5uH2GUs9x_kB81lKjUPiBSkU5qVlxsttnZwbqu6tnIaOB0v_F2zG9Vf4FpaiqK/exec",
-      {
-        method: "POST",
-        body: JSON.stringify(formData),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        mode: "no-cors",
-      }
-    );
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbx0WA5uH2GUs9x_kB81lKjUPiBSkU5qVlxsttnZwbqu6tnIaOB0v_F2zG9Vf4FpaiqK/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(formData),
+          headers: {
+            "Content-Type": "application/json",
+          },
+          mode: "no-cors",
+        }
+      );
 
-    alert("✅ Message sent successfully!");
-    setFormData({ fullname: "", email: "", phone: "", message: "" });
-  } catch (error) {
-    console.error("Error:", error);
-    alert("❌ Something went wrong!");
-  } finally {
-    setLoading(false); // hide loading message
-  }
-};
+      alert("✅ Message sent successfully!");
+      setFormData({ fullname: "", email: "", phone: "", message: "" });
+    } catch (error) {
+      console.error("Error:", error);
+      alert("❌ Something went wrong!");
+    } finally {
+      setLoading(false); // hide loading message
+    }
+  };
 
 
   return (
@@ -264,8 +264,11 @@ const handleSubmit = async (e) => {
             </p>
           </div>
           <div className="but">
-            <button>Email Us Now</button>
+            <a href="mailto:Karthik@agrisa.co.in?subject=Inquiry&body=Hi, I want to know more..." >
+              <button>Email Us Now</button>
+            </a>
           </div>
+
         </div>
       </div>
     </div>

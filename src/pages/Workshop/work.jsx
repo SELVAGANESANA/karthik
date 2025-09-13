@@ -86,8 +86,8 @@ const Work = ({ cards }) => {
                         we can help you achieve your transformation goals.
                     </p>
                     <div className="button-group">
-                        <button className="schedule">Schedule Consultation <i class="ri-arrow-right-line righer-lineing"></i></button>
-                        <button className='success'>View Success Stories <i class="ri-arrow-right-line righer-lineing"></i></button>
+                        <button onClick={()=>navigate('/Contact')} className="schedule">Schedule Consultation <i class="ri-arrow-right-line righer-lineing"></i></button>
+                        {/* <button className='success'>View Success Stories <i class="ri-arrow-right-line righer-lineing"></i></button> */}
                     </div>
                 </section>
             </main>

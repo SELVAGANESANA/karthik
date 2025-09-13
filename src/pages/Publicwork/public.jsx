@@ -271,10 +271,10 @@ const Public = () => {
                         Join our next public workshop and connect with like-minded professionals while developing the skills you need to excel in your career.
                     </p>
                     <div className="button-group">
-                        <button className="register-seven-btn">
+                        <button onClick={()=>navigate('/Contact')} className="register-seven-btn">
                             Register Today <i className="ri-arrow-right-line righer-lineing"></i>
                         </button>
-                        <button className='view-btn-seven'>View Past Events</button>
+                        {/* <button className='view-btn-seven'>View Past Events</button> */}
                     </div>
                 </section>
             </main>

@@ -158,4 +158,9 @@ li a:hover{
   .port,.quick-link,.cont {
     gap: 12px;
   }
+
+  .foot-terms p{
+    font-size: 13px;
+    line-height: normal;
+  }
 }
